@@ -18,7 +18,7 @@ def execute():
                 fieldname="custom_fetch_items_from_sales_order",
                 label="Fetch Items From Sales Order",
                 fieldtype="Button",
-                insert_after="custom_project_monitoring_details",
+                insert_after="custom_project_monitoring_details_section",
                 is_custom_field=1,
                 is_system_generated=0,
             ),

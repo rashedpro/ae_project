@@ -64,7 +64,7 @@ doctype_js = {"Project" : "public/js/project.js"}
 # ------------
 
 # before_install = "ae_project.install.before_install"
-after_install = "ae_project.patches.create_project_monitoring_fields_in_project_doctype.execute"
+# after_install = "ae_project.patches.create_project_monitoring_fields_in_project_doctype.execute"
 
 # Uninstallation
 # ------------

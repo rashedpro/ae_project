@@ -26,7 +26,7 @@ def update_project_monitoring_details(self,method):
         print(row_mon)
         row_mon.requested_qty=get_requested_qty(self.name,row_mon.item_code)[0].mri_qty if len(get_requested_qty(self.name,row_mon.item_code))>0  else 0
         row_mon.ordered_qty=get_ordered_qty(self.name,row_mon.item_code)[0].poi_qty if len(get_ordered_qty(self.name,row_mon.item_code))>0  else 0
-        row_mon.received_qty=get_ordered_qty(self.name,row_mon.item_code)[0].pri_qty if len(get_received_qty(self.name,row_mon.item_code))>0  else 0
+        row_mon.received_qty=get_received_qty(self.name,row_mon.item_code)[0].pri_qty if len(get_received_qty(self.name,row_mon.item_code))>0  else 0
         row_mon.issued_qty=get_issued_qty(self.name,row_mon.item_code)
         row_mon.available_qty=get_available_qty(row_mon.item_code)[0].actual_qty if len(get_available_qty(row_mon.item_code))>0  else 0
         row_mon.variance=(row_mon.initial_planned_qty if row_mon.initial_planned_qty else 0) - (row_mon.planned_qty if row_mon.planned_qty else 0)

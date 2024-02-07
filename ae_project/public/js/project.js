@@ -95,6 +95,7 @@ function choose_items_and_create_material_request(frm) {
                     var row = frappe.model.add_child(doc, "Material Request Item", "items");
                     row.item_code=user_item.item_code
                     row.qty=1
+                    row.project=frm.doc.name
                 }
                 // if in new tab below 2 lines, but it doesn't fill up child table
                 // frappe.open_in_new_tab = true;
